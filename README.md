@@ -37,8 +37,8 @@ Open `EEG_Motor_Imagery_BCI_Decoder.ipynb` in Colab and run all cells. The first
 **Locally:**
 
 ```bash
-git clone <your-repo-url>
-cd <repo>
+git clone <https://github.com/adeelms/EEG-Motor-Imagery-BCI-Decode>
+cd <https://github.com/adeelms/EEG-Motor-Imagery-BCI-Decode>
 pip install -r requirements.txt
 jupyter notebook EEG_Motor_Imagery_BCI_Decoder.ipynb
 ```
