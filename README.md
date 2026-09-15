@@ -31,15 +31,13 @@ Three ablation tests follow:
 | Late window (2.5–4.0 s), duration matched at 1.5 s | 69.8% → 51.8%, at chance |
 | Occipital alpha asymmetry by cue side | Direction consistent with hemifield attention; underpowered |
 
-The discriminative signal is **posterior, cue-locked, and does not persist through the trial** — the opposite profile to sustained mu desynchronisation. The EEGBCI protocol displays a lateralised visual target during the imagery period, making attention to that cue the leading explanation, though *n* = 45 is too small to establish it.[cite: 2]
+The discriminative signal is **posterior, cue-locked, and does not persist through the trial** — the opposite profile to sustained mu desynchronisation. The EEGBCI protocol displays a lateralised visual target during the imagery period, making attention to that cue the leading explanation, though *n* = 45 is too small to establish it.
 
-**The result is negative, and deliberately so:** the accuracy is real, its source is not sustained sensorimotor activity, and no amount of classifier tuning would have revealed that. Only spatial and temporal validation did.[cite: 2]
+**The result is negative, and deliberately so:** the accuracy is real, its source is not sustained sensorimotor activity, and no amount of classifier tuning would have revealed that. Only spatial and temporal validation did.
 
 ---
 
 ## Running it
-## Running it
-
 **Google Colab** (recommended — the notebook was developed there):
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/adeelms/EEG-Motor-Imagery-BCI-Decoder/blob/main/EEG-Motor-Imagery-BCI-Decoder.ipynb)
@@ -57,7 +55,8 @@ jupyter notebook EEG-Motor-Imagery-BCI-Decoder.ipynb
 
 No manual data download is needed. MNE fetches the EDF files from PhysioNet on first run and caches them (`~/mne_data` by default).
 
-**Reproducibility:** all outputs in the committed notebook come from a single clean run — execution counts read 1, 2, 3, 4, so every figure and number corresponds to the code directly above it.
+**Reproducibility:** all outputs in the committed notebook come from a single clean run — execution counts read 1, 2, 3, 4, so every figure and number corresponds to the code directly above it. 
+
 ---
 
 ## Structure
