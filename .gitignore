@@ -1,0 +1,13 @@
+# Jupyter & Python artifacts
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# Data downloads & caches
+mne_data/
+MNE-eegbci-data/
+*.edf
+
+# OS files
+.DS_Store
+Thumbs.db
