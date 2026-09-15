@@ -42,15 +42,15 @@ The discriminative signal is **posterior, cue-locked, and does not persist throu
 
 **Google Colab** (recommended — the notebook was developed there):
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/adeelms/EEG-Motor-Imagery-BCI-Decode/blob/main/EEG-Motor-Imagery-BCI-Decoder.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/adeelms/EEG-Motor-Imagery-BCI-Decoder/blob/main/EEG-Motor-Imagery-BCI-Decoder.ipynb)
 
 Click the badge above and run all cells. The first cell installs MNE if absent and downloads the dataset (~7 MB) automatically. Total runtime is a few minutes.
 
 **Locally:**
 
 ```bash
-git clone https://github.com/adeelms/EEG-Motor-Imagery-BCI-Decode.git
-cd EEG-Motor-Imagery-BCI-Decode
+git clone https://github.com/adeelms/EEG-Motor-Imagery-BCI-Decoder.git
+cd EEG-Motor-Imagery-BCI-Decoder
 pip install -r requirements.txt
 jupyter notebook EEG-Motor-Imagery-BCI-Decoder.ipynb
 ```
