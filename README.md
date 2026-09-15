@@ -9,12 +9,19 @@ A reproduction of the classic BCI Competition baseline architecture (Common Spat
 ---
 
 ## Summary
+## Summary
 
-The pipeline reaches **71.6% ± 15.6%** against a 51.1% majority-class baseline, significant by permutation test. Taken alone, that number reads as a working motor imagery decoder.
+The pipeline reaches **71.6% ± 15.6%** against a 51.1% majority-class baseline, significant by permutation test. Taken alone, that number reads as a working motor imagery decoder.[cite: 2]
 
-It isn't one.
+It isn't one.[cite: 2]
 
-Plotting the CSP spatial patterns shows the most discriminative component weighted over **occipital cortex**, not the sensorimotor strip — no C3/C4 lateralisation of the kind motor imagery produces. Three ablation tests follow:
+Plotting the CSP spatial patterns shows the most discriminative component weighted over **occipital cortex**, not the sensorimotor strip — no C3/C4 lateralisation of the kind motor imagery produces.[cite: 2]
+
+<p align="center">
+  <img src="images/csp_patterns.png" alt="CSP Topographies showing Occipital Focus" width="800"/>
+</p>
+
+Three ablation tests follow:[cite: 2]
 
 | Test | Result |
 |---|---|
