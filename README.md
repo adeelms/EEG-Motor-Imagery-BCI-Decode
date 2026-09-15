@@ -9,9 +9,11 @@ A reproduction of the classic BCI Competition baseline architecture (Common Spat
 ---
 
 ## Summary
-## Summary
+The pipeline reaches **71.6% ± 15.6%** against a 51.1% majority-class baseline, significant by permutation test. Taken alone, that number reads as a working motor imagery decoder.[cite: 2] 
 
-The pipeline reaches **71.6% ± 15.6%** against a 51.1% majority-class baseline, significant by permutation test. Taken alone, that number reads as a working motor imagery decoder.[cite: 2]
+<p align="center">
+  <img src="images/confusion_matrix.png" alt="Confusion Matrix showing balanced classification" width="400"/>
+</p>
 
 It isn't one.[cite: 2]
 
@@ -25,13 +27,13 @@ Three ablation tests follow:[cite: 2]
 
 | Test | Result |
 |---|---|
-| Drop 9 occipital/parieto-occipital channels | 71.6% → 61.1% (paired Wilcoxon *p* = 0.0003) |
-| Late window (2.5–4.0 s), duration matched at 1.5 s | 69.8% → 51.8%, at chance |
-| Occipital alpha asymmetry by cue side | Direction consistent with hemifield attention; underpowered |
+| Drop 9 occipital/parieto-occipital channels | 71.6% → 61.1% (paired Wilcoxon *p* = 0.0003) |[cite: 2]
+| Late window (2.5–4.0 s), duration matched at 1.5 s | 69.8% → 51.8%, at chance |[cite: 2]
+| Occipital alpha asymmetry by cue side | Direction consistent with hemifield attention; underpowered |[cite: 2]
 
-The discriminative signal is **posterior, cue-locked, and does not persist through the trial** — the opposite profile to sustained mu desynchronisation. The EEGBCI protocol displays a lateralised visual target during the imagery period, making attention to that cue the leading explanation, though *n* = 45 is too small to establish it.
+The discriminative signal is **posterior, cue-locked, and does not persist through the trial** — the opposite profile to sustained mu desynchronisation. The EEGBCI protocol displays a lateralised visual target during the imagery period, making attention to that cue the leading explanation, though *n* = 45 is too small to establish it.[cite: 2]
 
-**The result is negative, and deliberately so:** the accuracy is real, its source is not sustained sensorimotor activity, and no amount of classifier tuning would have revealed that. Only spatial and temporal validation did.
+**The result is negative, and deliberately so:** the accuracy is real, its source is not sustained sensorimotor activity, and no amount of classifier tuning would have revealed that. Only spatial and temporal validation did.[cite: 2]
 
 ---
 
