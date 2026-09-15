@@ -1,0 +1,14 @@
+# EEG Motor Imagery BCI Decoder — dependencies
+#
+# MNE is pinned exactly: 'standard_1005' / 'standard_1020' montage names are
+# deprecated from MNE 1.14 onward (renamed to 'colin27_*'), and CSP.plot_patterns()
+# is marked legacy. Unpinning will break Phase 1 and Phase 4.
+#
+# To regenerate exact pins from a working environment:
+#   pip freeze | grep -E '^(mne|numpy|scipy|scikit-learn|matplotlib)=' > requirements.txt
+
+mne==1.13.2
+numpy>=1.24,<2.2
+scipy>=1.11
+scikit-learn>=1.3
+matplotlib>=3.7
