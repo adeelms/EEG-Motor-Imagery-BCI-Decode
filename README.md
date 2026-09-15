@@ -9,27 +9,27 @@ A reproduction of the classic BCI Competition baseline architecture (Common Spat
 ---
 
 ## Summary
-The pipeline reaches **71.6% ± 15.6%** against a 51.1% majority-class baseline, significant by permutation test. Taken alone, that number reads as a working motor imagery decoder.[cite: 2] 
+The pipeline reaches **71.6% ± 15.6%** against a 51.1% majority-class baseline, significant by permutation test. Taken alone, that number reads as a working motor imagery decoder. 
 
 <p align="center">
   <img src="images/confusion_matrix.png" alt="Confusion Matrix showing balanced classification" width="400"/>
 </p>
 
-It isn't one.[cite: 2]
+It isn't one.
 
-Plotting the CSP spatial patterns shows the most discriminative component weighted over **occipital cortex**, not the sensorimotor strip — no C3/C4 lateralisation of the kind motor imagery produces.[cite: 2]
+Plotting the CSP spatial patterns shows the most discriminative component weighted over **occipital cortex**, not the sensorimotor strip — no C3/C4 lateralisation of the kind motor imagery produces.
 
 <p align="center">
   <img src="images/csp_patterns.png" alt="CSP Topographies showing Occipital Focus" width="800"/>
 </p>
 
-Three ablation tests follow:[cite: 2]
+Three ablation tests follow:
 
 | Test | Result |
 |---|---|
-| Drop 9 occipital/parieto-occipital channels | 71.6% → 61.1% (paired Wilcoxon *p* = 0.0003) |[cite: 2]
-| Late window (2.5–4.0 s), duration matched at 1.5 s | 69.8% → 51.8%, at chance |[cite: 2]
-| Occipital alpha asymmetry by cue side | Direction consistent with hemifield attention; underpowered |[cite: 2]
+| Drop 9 occipital/parieto-occipital channels | 71.6% → 61.1% (paired Wilcoxon *p* = 0.0003) |
+| Late window (2.5–4.0 s), duration matched at 1.5 s | 69.8% → 51.8%, at chance |
+| Occipital alpha asymmetry by cue side | Direction consistent with hemifield attention; underpowered |
 
 The discriminative signal is **posterior, cue-locked, and does not persist through the trial** — the opposite profile to sustained mu desynchronisation. The EEGBCI protocol displays a lateralised visual target during the imagery period, making attention to that cue the leading explanation, though *n* = 45 is too small to establish it.[cite: 2]
 
@@ -38,24 +38,26 @@ The discriminative signal is **posterior, cue-locked, and does not persist throu
 ---
 
 ## Running it
+## Running it
 
 **Google Colab** (recommended — the notebook was developed there):
 
-Open `EEG_Motor_Imagery_BCI_Decoder.ipynb` in Colab and run all cells. The first cell installs MNE if absent and downloads the dataset (~7 MB) automatically. Total runtime is a few minutes.
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/adeelms/EEG-Motor-Imagery-BCI-Decode/blob/main/EEG-Motor-Imagery-BCI-Decoder.ipynb)
+
+Click the badge above and run all cells. The first cell installs MNE if absent and downloads the dataset (~7 MB) automatically. Total runtime is a few minutes.
 
 **Locally:**
 
 ```bash
-git clone <https://github.com/adeelms/EEG-Motor-Imagery-BCI-Decode>
-cd <https://github.com/adeelms/EEG-Motor-Imagery-BCI-Decode>
+git clone https://github.com/adeelms/EEG-Motor-Imagery-BCI-Decode.git
+cd EEG-Motor-Imagery-BCI-Decode
 pip install -r requirements.txt
-jupyter notebook EEG_Motor_Imagery_BCI_Decoder.ipynb
+jupyter notebook EEG-Motor-Imagery-BCI-Decoder.ipynb
 ```
 
 No manual data download is needed. MNE fetches the EDF files from PhysioNet on first run and caches them (`~/mne_data` by default).
 
-**Reproducibility:** run `Runtime → Restart session and run all` before committing. Execution counts in the saved file should read 1, 2, 3, 4 — anything else means the stored outputs may not correspond to the code above them.
-
+**Reproducibility:** all outputs in the committed notebook come from a single clean run — execution counts read 1, 2, 3, 4, so every figure and number corresponds to the code directly above it.
 ---
 
 ## Structure
